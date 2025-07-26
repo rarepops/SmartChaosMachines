@@ -1,4 +1,4 @@
-# Smart Chaos Machines: Solution Overview
+# **Smart Chaos Machines: Solution Overview**
 
 **Smart Chaos Machines** is an intelligent counting machine optimization platform designed to revolutionize factory packing operations. Currently, factory operators manually configure counting machines for each production order based on brick type and production requirements. It is a time-intensive process that relies heavily on operator experience and intuition.
 
@@ -13,11 +13,17 @@ The solution automates this configuration process by collecting real-time perfor
 
 The platform transforms counting machine operations from reactive, manual processes to proactive, data-driven automation—ultimately reducing changeover times, minimizing human error, and establishing a foundation for continuous performance optimization across the global manufacturing network.
 
-
-
 ### 📄 **[See full Project Proposal here](Documentation/Project%20Proposal.md)**
 
-# Project Structure
+---
+
+# **How We Work:** 
+
+> The team operates in 2-week agile sprints. For details on our collaboration, pairing, and planning practices, see [Team Ways of Working](#team-ways-of-working).
+
+
+
+# **Project Structure**
 
 > **Tech Stack:** This project is built with **.NET 10** and follows the principles of **CLEAN architecture** for maintainability, scalability, and testability.
 
