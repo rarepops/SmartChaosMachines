@@ -1,0 +1,2 @@
+# Use file-scoped namespaces
+dotnet_style_namespace_declarations = file_scoped:suggestion

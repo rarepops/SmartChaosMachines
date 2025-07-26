@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="LineControl/LineControl.csproj" />
+  <Project Path="SmartChaosMachines.ApiService/SmartChaosMachines.ApiService.csproj" />
+  <Project Path="SmartChaosMachines.AppHost/SmartChaosMachines.AppHost.csproj" />
+  <Project Path="SmartChaosMachines.ServiceDefaults/SmartChaosMachines.ServiceDefaults.csproj" />
+  <Project Path="SmartChaosMachines.Web/SmartChaosMachines.Web.csproj" />
+</Solution>

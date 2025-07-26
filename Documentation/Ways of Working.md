@@ -1,187 +1,131 @@
-# Ways of Working: Smart Chaos Machines Team
+<p align="center">
+  <img src="Documentation/SmartChaosMachines_Logo.png" alt="Smart Chaos Machines Logo" width="220" />
+</p>
 
-_This document defines team collaboration practices for the Smart Chaos Machines project. For project context and technical architecture, see [Project Proposal](Project-Proposal.md). For implementation timeline, see [Implementation Plan](Implementation-Plan.md)._
+# **Smart Chaos Machines: Solution Overview**
 
-## **"Energize People Everyday":**
-- **Dad Joke Standups**: Dad jokes before the standup starts to start meetings with a bit of fun
-- **Gaming Sessions**: Regular online gaming with mic-required games (like Lethal Company) to build natural communication and teamwork (outside the pressure of production deadlines, with approval by manager)
-- **Tech Fact Standups**: Start standups with interesting industrial automation or tech facts
-- **Sprint Celebrations**: Special activities when major milestones are achieved (first successful CM connection, automated configuration working, etc.)
+**Smart Chaos Machines** is a next generation optimization platform designed to revolutionize factory packing operations. Currently, factory operators manually configure counting machines for each production order based on brick type and production requirements. It is a time-intensive process that relies heavily on operator experience and intuition.
 
-## Philosophy
+The solution automates this configuration process by collecting real-time performance data from counting machines via OPC-UA protocol, analyzing historical patterns, and applying machine learning algorithms to determine optimal settings. The system will automatically configure counting machines during production changeovers, reducing manual intervention while improving throughput and consistency.
 
-Our approach to team collaboration is built on two core principles: **continuous pairing** and **architecture-driven planning**. These practices address the unique challenges of our distributed team working on complex industrial IoT systems while building the psychological safety and technical excellence needed for success.
+**Key capabilities include:**
 
-_These practices directly support the implementation phases outlined in [Implementation Plan](Implementation-Plan.md) and the technical complexity described in [Project Proposal](Project-Proposal.md)._
+- Real-time monitoring and control of counting machines across production lines
+- Automated configuration management based on production orders and element characteristics
+- Comprehensive observability dashboards for operators, developers, and data scientists
+- Machine learning-driven optimization that continuously improves based on performance feedback
+- Global deployment architecture supporting factories worldwide with cloud-based universal monitoring
 
-## Pair Programming as Default Practice
+The platform transforms counting machine operations from reactive, manual processes to proactive, data-driven automation—ultimately reducing changeover times, minimizing human error, and establishing a foundation for continuous performance optimization across the global manufacturing network.
 
-### Why Pair Programming
+## 📋 **Project Documentation**
 
-**For Our Context:**
-- **Knowledge Distribution**: Critical when dealing with OPC-UA integration, firmware complexities, and external specialists - prevents single points of failure
-- **Team Cohesion**: Merged teams with different technical backgrounds benefit from forced collaboration and shared problem-solving
-- **Continuous Learning**: Natural knowledge transfer between team members with different expertise areas
+### Core Project Documents
 
-**Alignment with Project Needs:** _Supporting the modular monolithic architecture and multi-phase implementation described in [Project Proposal](Project-Proposal.md#modular-monolithic-architecture)_
+- **[📄 Project Proposal](Documentation/Project-Proposal.md)** - Complete project overview, architecture decisions, and risk analysis
+- **[🚀 Implementation Plan](Documentation/Implementation-Plan.md)** - Detailed sprint breakdown and phased implementation approach
+- **[👥 Ways of Working](Documentation/Ways-of-Working.md)** - Team collaboration practices and methodologies
 
-### Implementation
+### Quick Navigation
 
-**Daily Operations:**
-- **Default to Pairing**: All production code written in pairs, especially OPC-UA integration and ML pipeline work, where there might be knowledge gaps
-- **Daily Pair Rotation**: Switch pairs daily to maximize knowledge distribution across the team
-- **Driver/Navigator Model**: Clear responsibilities to prevent clashes, especially important with mixed experience levels
-- **Solo Work Exceptions**: Research spikes, documentation, and individual learning tasks only
-
-**Special Sessions:**
-- **Mob Programming**: Entire team tackles complex challenges together (firmware integration)
-- **Cross-Functional Pairing**: Developers pair with external specialists for ML integration work
-- **Critical Code Pairing**: Mandatory pairing for any code touching counting machines
-
-**Remote Pairing:**
-- **VS Code Live Share**: Seamless pairing for any distributed team members
-- **mob.sh + Screen Share**: Lightweight tool for seamless pair programming handoffs
-
-## Visual Planning with Architecture Snapshots
-
-### Architecture-Driven Sprint Planning
-
-_Supporting the phased implementation approach detailed in [Implementation Plan](Implementation-Plan.md#work-methodology-agile-with-phased-focus)_
-
-**Process:**
-1. **Current State Review**: Start each sprint with updated architecture diagram snapshot showing what's built, being built, or needs building - keeping planning visual and immediately actionable
-2. **Target State Vision**: Visualize what the architecture should look like after the sprint
-3. **Gap Analysis**: Identify components that need building/modification
-4. **Dependency Mapping**: Draw connections between tasks affecting the same components
-5. **Risk Visualization**: Highlight integration points that could cause blockers
-
-**Planning Sessions:**
-- **Sprint Planning**: Architecture diagram drives task breakdown and estimation
-- **Daily Standups**: Brief architecture context for blockers and dependencies
-- **Retrospectives**: Architecture evolution discussion - what changed and why
-
-### Visual Tools and Techniques
-
-**Digital Collaboration:**
-- **Miro**: Collaborative architecture sessions and planning board
-- **Component Ownership**: Color-code architecture components by team member expertise
-- **Integration Highlights**: Clearly mark OPC-UA, RabbitMQ, and external API endpoints
-- **Deployment Boundaries**: Visual separation of edge, on-premises, and cloud components
-
-_Directly supporting the hybrid edge-cloud architecture described in [Project Proposal](Project-Proposal.md#hosting-decisions-hybrid-edge-cloud-architecture)_
-
-**Living Documentation:**
-- **Architecture as Code**: Diagrams version-controlled and updated each sprint
-- **Component Maps**: Visual representation of which team members have expertise where, and possibly interests in learning
-- **Dependency Tracking**: Updated visualization as external API integrations are discovered
-
-## Knowledge Management
-
-### Continuous Knowledge Sharing
-
-**Documentation Standards:**
-- **Pair Programming Sessions**: Document architectural decisions made during pairing
-- **Architecture Evolution**: Track changes and rationale in living documents
-- **External Specialist Knowledge**: Mandatory capture of knowledge before contractor rotations
-- **Cross-Team Learning**: Regular tech talks on domain expertise
-
-**Knowledge Distribution:**
-- **No Single Points of Failure**: Ensure at least two people understand each critical system component
-- **Onboarding Through Pairing**: New team members paired with different experts daily
-- **External Integration Expertise**: Shared understanding of external APIs
-
-_Critical for managing the risks identified in [Project Proposal](Project-Proposal.md#organizational-risks)_
-
-## Team Health and Morale
-
-### Building Psychological Safety
-
-**Collaboration Over Competition:**
-- **Shared Ownership**: All code belongs to the team, not individuals
-- **No Blame Culture**: System failures focus on improvement, not finding faults
-- **Learning Opportunities**: Mistakes become team learning sessions
-
-**Recognition and Progress:**
-- **Small Wins Celebration**: First successful CM connection, first automated configuration
-- **Visible Progress**: Shared dashboards showing sprint completion and system uptime
-- **Team Achievements**: Document and share successes with broader organization
-
-### Balanced Workload
-
-**Support Structure:**
-- **Firefighter Rotation**: One developer per sprint handles legacy applications
-- **Pair Support**: Firefighter never works alone - always has backup
-- **Technical Debt Time**: 10% sprint capacity for unforeseen issues
-- **Learning Budget**: Time allocated for exploring relevant new technologies
-
-_Mitigating legacy application neglect risk identified in [Project Proposal](Project-Proposal.md#organizational-risks)_
-
-## Success Indicators
-
-### Team Health Metrics
-- **Regular Satisfaction Surveys**: Tracking upward trend in team morale
-- **Reduced Decision Time**: Faster resolution of technical decisions through collaboration
-- **Increased Participation**: Active engagement in retrospectives and planning sessions
-- **Proactive Communication**: Team members surface blockers early and often
-
-### Collaboration Quality
-- **Knowledge Distribution**: Multiple people can handle any system component
-- **Voluntary Challenging Work**: Team members choose difficult tasks rather than avoiding them
-- **Shared Problem Ownership**: Production issues addressed collectively, not individually
-- **Cross-Team Relationships**: Positive collaboration with Recipe API and Line Configuration teams
-
-### Technical Excellence
-- **Code Quality**: Reduced bugs in production due to pair programming
-- **Architecture Clarity**: Team can easily explain system design and dependencies
-- **Integration Success**: Smooth deployments and fewer rollbacks
-- **Continuous Improvement**: Regular architecture refactoring and technical debt reduction
-
-_Supporting the technical excellence metrics defined in [Project Proposal](Project-Proposal.md#technical-excellence)_
-
-## Implementation Timeline
-
-### Week 1-2: Foundation
-- Establish pairing rotations and ground rules
-- Create initial architecture visualization tools
-- Define documentation standards
-
-### Week 3-4: Rhythm Development
-- Implement architecture-driven sprint planning
-- Establish mob programming sessions
-- Refine pairing practices based on early feedback
-
-### Week 5+: Continuous Improvement
-- Regular retrospectives on ways of working effectiveness
-- Adjust practices based on project needs and team feedback
-- Maintain focus on team health alongside technical delivery
-
-_Timeline aligns with Phase 1 foundation work described in [Implementation Plan](Implementation-Plan.md#phase-1-foundation-2-sprints)_
-
-## Integration with Project Phases
-
-**Phase 1-2 (Foundation & Core Value):**
-
-- Heavy pairing on OPC-UA integration
-- Architecture snapshots crucial for understanding modular monolith evolution
-
-**Phase 3 (Stabilization):**
-
-- Mob programming for UAT preparation
-- Cross-functional pairing with operators for training
-
-**Phase 4 (Global Rollout):**
-
-- Knowledge distribution critical for supporting multiple factories
-- Visual planning essential for tracking deployment progress
-
-**Phase 5 (ML Integration):**
-
-- External specialist pairing becomes critical
-- Architecture evolution tracking for ML pipeline integration
+| Need to understand...                         | Read this document                                                                                                |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **What we're building and why**               | [Project Proposal](Documentation/Project-Proposal.md)                                                             |
+| **How we're building it (timeline & phases)** | [Implementation Plan](Documentation/Implementation-Plan.md)                                                       |
+| **How the team collaborates**                 | [Ways of Working](Documentation/Ways-of-Working.md)                                                               |
+| **Technical architecture**                    | [Project Proposal - Architecture Decisions](Documentation/Project-Proposal.md#architecture-decisions)             |
+| **Sprint planning process**                   | [Ways of Working - Visual Planning](Documentation/Ways-of-Working.md#visual-planning-with-architecture-snapshots) |
+| **Risk management**                           | [Project Proposal - Key Risks](Documentation/Project-Proposal.md#key-risks)                                       |
+| **Success metrics**                           | [Project Proposal - Success Metrics](Documentation/Project-Proposal.md#success-metrics)                           |
 
 ---
 
-_Related Documents:_
+## GDPR and Data Handling Notice
 
-- _[Project Proposal](Project-Proposal.md) - Technical context and architecture these practices support_
-- _[Implementation Plan](Implementation-Plan.md) - Sprint timeline and phases these practices enable_
+This platform is designed to comply fully with GDPR and relevant data protection regulations, especially for deployments across the European Union. Key points to note:
+
+- **Data Minimization:** We collect only the data necessary for the platform's purpose, including machine telemetry and configuration metadata.
+- **Personal Data Handling:** If any operator-related personal data (such as login events or audit trails) are captured, processing is strictly governed by explicit consent and data subject rights.
+- **Data Sovereignty:** Production and operator data processed on-premises for real-time operations, with aggregated, anonymized data streamed to compliant cloud services for global analytics.
+- **Access and Transparency:** Operators can request access to their data and exercise rights to correct or delete data, consistent with GDPR requirements.
+- **Security Measures:** Data is encrypted in transit and at rest, with robust access controls and audit logging.
+- **Privacy by Design:** Privacy and data protection principles are embedded throughout the system design and development lifecycle.
+
+For detailed information on GDPR compliance and data handling policies, see the [Project Proposal - GDPR and Data Handling section](Documentation/Project-Proposal.md#gdpr-and-data-handling).
+
+---
+
+## Architecture Overview
+
+### Hybrid Edge-Cloud Architecture
+
+The Smart Chaos Machines platform uses a **hybrid edge-cloud architecture** that keeps real-time control on-premises while enabling universal monitoring through a cloud-based data lake.
+
+- **Edge Processing**: Real-time OPC-UA communication and machine control remain on factory premises
+- **Cloud Data Lake**: Aggregated data streams to cloud for global analytics and cross-factory insights
+- **Universal Monitoring**: Single dashboard view across all global factories
+
+_For complete architectural details, see [Project Proposal - Architecture Decisions](Documentation/Project-Proposal.md#architecture-decisions)._
+
+### Architecture Diagrams
+
+![C4 Level 1 - System Diagram](Documentation/Architecture%20Diagrams/C4%20Level%201%20-%20System%20Diagram.png)
+<sub>**Diagram Reference:** This system diagram is also created using the <a href="https://c4model.com/" target="_blank">C4 model</a> for visualizing software architecture.</sub>
+
+![C4 Level 2 - Container Diagram](Documentation/Architecture%20Diagrams/C4%20Level%202%20-%20Container%20Diagram.png)
+<sub>**Diagram Reference:** This architecture diagram is created using the <a href="https://c4model.com/" target="_blank">C4 model</a> for visualizing software architecture.</sub>
+
+---
+
+## **How We Work**
+
+The team operates in **2-week agile sprints** with a focus on **continuous pairing** and **architecture-driven planning**. Our approach emphasizes:
+
+- **Pair Programming as Default**: All production code written in pairs to maximize knowledge distribution
+- **Visual Planning**: Architecture diagram snapshots drive sprint planning and task breakdown
+- **Phase-Based Development**: Clear phase boundaries from foundation through global rollout
+
+### Quick Team References
+
+- **Current Phase**: _[Check Implementation Plan](Documentation/Implementation-Plan.md#work-methodology-agile-with-phased-focus)_
+- **Sprint Planning Process**: _[Ways of Working - Visual Planning](Documentation/Ways-of-Working.md#visual-planning-with-architecture-snapshots)_
+- **Pairing Guidelines**: _[Ways of Working - Pair Programming](Documentation/Ways-of-Working.md#pair-programming-as-default-practice)_
+- **Team Health Practices**: _[Ways of Working - Team Health](Documentation/Ways-of-Working.md#team-health-and-morale)_
+
+For complete team collaboration details, see [Ways of Working](Documentation/Ways-of-Working.md).
+
+---
+
+## **Project Structure**
+
+> **Tech Stack:** This project is built with **.NET 10** and follows the principles of **CLEAN architecture** for maintainability, scalability, and testability.
+
+### Implementation Status
+
+**Current Implementation Phase**: _[View in Implementation Plan](Documentation/Implementation-Plan.md)_
+
+**Success Metrics Tracking**: _[View targets in Project Proposal](Documentation/Project-Proposal.md#success-metrics)_
+
+---
+
+## Troubleshooting
+
+### Browser Certificate Error
+
+<https://learn.microsoft.com/en-us/dotnet/aspire/troubleshooting/untrusted-localhost-certificate>
+
+1. Close all browser windows
+2. Run `dotnet dev-certs https --clean`
+3. Run `dotnet dev-certs https --trust`
+4. Rebuild solution and run
+
+---
+
+## Getting Started
+
+1. **Understand the Project**: Start with [Project Proposal](Documentation/Project-Proposal.md)
+2. **Check Current Sprint**: Review [Implementation Plan](Documentation/Implementation-Plan.md)
+3. **Join the Team**: Read [Ways of Working](Documentation/Ways-of-Working.md) for collaboration practices
+4. **Set up Development Environment**: Follow technical setup instructions above
+
+_For questions about the project, architecture, or team practices, refer to the relevant documentation sections linked above._
