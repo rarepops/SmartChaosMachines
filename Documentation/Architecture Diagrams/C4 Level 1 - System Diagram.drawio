@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.7">
+  <diagram name="Page-1" id="cWd7Vi0j8GFN_4mYh6tr">
+    <mxGraphModel dx="1393" dy="930" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-1" value="Smart Chaos Machines™&amp;nbsp;&lt;div&gt;System Diagram&lt;/div&gt;&lt;div&gt;(Level 1 C4 Diagram)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;textShadow=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="40" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HP2z8tOIuhr0iAeGJz0d-2" target="HP2z8tOIuhr0iAeGJz0d-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-6" value="Interacts with CMs on the&lt;div&gt;Production Line&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HP2z8tOIuhr0iAeGJz0d-5">
+          <mxGeometry x="-0.2194" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="HP2z8tOIuhr0iAeGJz0d-2" target="HP2z8tOIuhr0iAeGJz0d-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-11" value="Uses Monitoring Tool&lt;div&gt;to check&lt;/div&gt;&lt;div&gt;Production Line&amp;nbsp;&lt;/div&gt;&lt;div&gt;state&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HP2z8tOIuhr0iAeGJz0d-10">
+          <mxGeometry x="-0.2398" y="2" relative="1" as="geometry">
+            <mxPoint x="14" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-2" value="User&lt;div&gt;[Operator]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A factory shopfloor worker&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-3" value="Production Line&lt;div&gt;[Contains CMs]&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="HP2z8tOIuhr0iAeGJz0d-4" target="HP2z8tOIuhr0iAeGJz0d-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-8" value="Reads and Writes&lt;div&gt;tags&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HP2z8tOIuhr0iAeGJz0d-7">
+          <mxGeometry x="0.1762" y="2" relative="1" as="geometry">
+            <mxPoint x="5" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HP2z8tOIuhr0iAeGJz0d-4" target="HP2z8tOIuhr0iAeGJz0d-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-14" value="Reads&lt;div&gt;Order and Line&lt;/div&gt;&lt;div&gt;Info&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HP2z8tOIuhr0iAeGJz0d-13">
+          <mxGeometry x="-0.161" y="-1" relative="1" as="geometry">
+            <mxPoint y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="HP2z8tOIuhr0iAeGJz0d-4" target="HP2z8tOIuhr0iAeGJz0d-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-20" value="Uses captured&lt;div&gt;data to train and&lt;/div&gt;&lt;div&gt;fetch settings based&lt;/div&gt;&lt;div&gt;on ML solution&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HP2z8tOIuhr0iAeGJz0d-18">
+          <mxGeometry x="-0.0352" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-4" value="SCM&lt;div&gt;[Software System]&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="360" y="190" width="120" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-12" value="External APIs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="640" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HP2z8tOIuhr0iAeGJz0d-17" value="SCM ML Solution&lt;div&gt;[Software System]&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="640" y="200" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Documentation/SmartChaosMachines_Logo.png" alt="Smart Chaos Machines Logo" width="220" />
+</p>
+
 # **Smart Chaos Machines: Solution Overview**
 
 **Smart Chaos Machines** is an intelligent counting machine optimization platform designed to revolutionize factory packing operations. Currently, factory operators manually configure counting machines for each production order based on brick type and production requirements. It is a time-intensive process that relies heavily on operator experience and intuition.
@@ -14,6 +18,18 @@ The solution automates this configuration process by collecting real-time perfor
 The platform transforms counting machine operations from reactive, manual processes to proactive, data-driven automation—ultimately reducing changeover times, minimizing human error, and establishing a foundation for continuous performance optimization across the global manufacturing network.
 
 ### 📄 **[See full Project Proposal here](Documentation/Project%20Proposal.md)**
+
+
+## Architecture Diagram ##
+
+
+![C4 Level 1 - System Diagram](Documentation/Architecture%20Diagrams/C4%20Level%201%20-%20System%20Diagram.png)
+<sub>**Diagram Reference:** This system diagram is also created using the <a href="https://c4model.com/" target="_blank">C4 model</a> for visualizing software architecture.</sub>
+
+
+![C4 Level 2 - Container Diagram](Documentation/Architecture%20Diagrams/C4%20Level%202%20-%20Container%20Diagram.png)
+<sub>**Diagram Reference:** This architecture diagram is created using the <a href="https://c4model.com/" target="_blank">C4 model</a> for visualizing software architecture.</sub>
+
 
 ---
 
