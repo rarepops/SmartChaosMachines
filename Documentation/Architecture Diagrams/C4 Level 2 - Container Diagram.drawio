@@ -1,42 +1,42 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.7">
   <diagram name="Page-1" id="Eh93fuZDlFWpbSS4P9uI">
-    <mxGraphModel dx="1672" dy="1116" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="557" dy="372" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="BcEj_neSAS26KWRLNINa-44" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Hosted in Cloud&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=middle;align=center;fillColor=#F3F9FF;strokeColor=#36393d;" vertex="1" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-44" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Hosted in Cloud&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=middle;align=center;fillColor=#F3F9FF;strokeColor=#36393d;" parent="1" vertex="1">
           <mxGeometry x="460" y="20" width="700" height="430" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-22" value="" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;gradientColor=none;fillColor=#E6E6E6;" vertex="1" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-22" value="" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;gradientColor=none;fillColor=#E6E6E6;" parent="1" vertex="1">
           <mxGeometry x="80" y="535" width="600" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-1" target="BcEj_neSAS26KWRLNINa-27">
+        <mxCell id="BcEj_neSAS26KWRLNINa-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BcEj_neSAS26KWRLNINa-1" target="BcEj_neSAS26KWRLNINa-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-41" value="Interact with Monitoring Tool&lt;div&gt;to get latest information on the line&lt;/div&gt;&lt;div&gt;without being physically present&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Use information to drive decisions&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BcEj_neSAS26KWRLNINa-40">
+        <mxCell id="BcEj_neSAS26KWRLNINa-41" value="Interact with Monitoring Tool&lt;div&gt;to get latest information on the line&lt;/div&gt;&lt;div&gt;without being physically present&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Use information to drive decisions&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BcEj_neSAS26KWRLNINa-40" vertex="1" connectable="0">
           <mxGeometry x="-0.4031" relative="1" as="geometry">
             <mxPoint x="39" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-1" value="User&lt;div&gt;[Operator]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A factory shopfloor worker&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-1" value="User&lt;div&gt;[Operator]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A factory shopfloor worker&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="100" y="255" width="120" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-2" value="Smart Chaos Machines™&amp;nbsp;&lt;div&gt;Container Diagram&lt;/div&gt;&lt;div&gt;(Level 2 C4 Diagram)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;textShadow=1;" vertex="1" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-2" value="Smart Chaos Machines™&amp;nbsp;&lt;div&gt;Container Diagram&lt;/div&gt;&lt;div&gt;(Level 2 C4 Diagram)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;textShadow=1;" parent="1" vertex="1">
           <mxGeometry x="38.75" y="80" width="280" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-10" value="" style="group;textShadow=0;labelBorderColor=none;" vertex="1" connectable="0" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-10" value="" style="group;textShadow=0;labelBorderColor=none;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="120" y="575" width="130" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-7" value="Counting Machine" style="whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=top;rounded=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;fontStyle=1" vertex="1" parent="BcEj_neSAS26KWRLNINa-10">
+        <mxCell id="BcEj_neSAS26KWRLNINa-7" value="Counting Machine" style="whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=top;rounded=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;fontStyle=1" parent="BcEj_neSAS26KWRLNINa-10" vertex="1">
           <mxGeometry width="130" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-5" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CM&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Hardware&lt;/font&gt;&lt;/div&gt;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" vertex="1" parent="BcEj_neSAS26KWRLNINa-10">
+        <mxCell id="BcEj_neSAS26KWRLNINa-5" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CM&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Hardware&lt;/font&gt;&lt;/div&gt;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" parent="BcEj_neSAS26KWRLNINa-10" vertex="1">
           <mxGeometry x="40.00333333333333" y="70" width="79.99999999999999" height="39.99999999999999" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-6" value="&lt;span&gt;&lt;font&gt;CM&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;&lt;font&gt;HMI&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#121519;fontColor=#00FF00;strokeColor=#B3B3B3;glass=0;rounded=0;shadow=0;gradientColor=none;labelBackgroundColor=none;fontSize=10;fontStyle=0" vertex="1" parent="BcEj_neSAS26KWRLNINa-10">
+        <mxCell id="BcEj_neSAS26KWRLNINa-6" value="&lt;span&gt;&lt;font&gt;CM&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;&lt;font&gt;HMI&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#121519;fontColor=#00FF00;strokeColor=#B3B3B3;glass=0;rounded=0;shadow=0;gradientColor=none;labelBackgroundColor=none;fontSize=10;fontStyle=0" parent="BcEj_neSAS26KWRLNINa-10" vertex="1">
           <mxGeometry x="20.00333333333333" y="36.666666666666686" width="46.666666666666664" height="46.666666666666664" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-1" target="BcEj_neSAS26KWRLNINa-6">
+        <mxCell id="BcEj_neSAS26KWRLNINa-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="BcEj_neSAS26KWRLNINa-1" target="BcEj_neSAS26KWRLNINa-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="50" y="315" />
@@ -44,65 +44,65 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-12" value="Interact with CMs&lt;div&gt;using the HMI&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BcEj_neSAS26KWRLNINa-11">
+        <mxCell id="BcEj_neSAS26KWRLNINa-12" value="Interact with CMs&lt;div&gt;using the HMI&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BcEj_neSAS26KWRLNINa-11" vertex="1" connectable="0">
           <mxGeometry x="-0.4024" y="1" relative="1" as="geometry">
             <mxPoint x="-1" y="39" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-13" value="" style="group;textShadow=0;labelBorderColor=none;" vertex="1" connectable="0" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-13" value="" style="group;textShadow=0;labelBorderColor=none;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="315" y="575" width="130" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-14" value="Counting Machine" style="whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=top;rounded=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;fontStyle=1" vertex="1" parent="BcEj_neSAS26KWRLNINa-13">
+        <mxCell id="BcEj_neSAS26KWRLNINa-14" value="Counting Machine" style="whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=top;rounded=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;fontStyle=1" parent="BcEj_neSAS26KWRLNINa-13" vertex="1">
           <mxGeometry width="130" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-15" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CM&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Hardware&lt;/font&gt;&lt;/div&gt;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" vertex="1" parent="BcEj_neSAS26KWRLNINa-13">
+        <mxCell id="BcEj_neSAS26KWRLNINa-15" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CM&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Hardware&lt;/font&gt;&lt;/div&gt;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" parent="BcEj_neSAS26KWRLNINa-13" vertex="1">
           <mxGeometry x="40.00333333333333" y="70" width="79.99999999999999" height="39.99999999999999" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-16" value="&lt;span&gt;&lt;font&gt;CM&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;&lt;font&gt;HMI&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#121519;fontColor=#00FF00;strokeColor=#B3B3B3;glass=0;rounded=0;shadow=0;gradientColor=none;labelBackgroundColor=none;fontSize=10;fontStyle=0" vertex="1" parent="BcEj_neSAS26KWRLNINa-13">
+        <mxCell id="BcEj_neSAS26KWRLNINa-16" value="&lt;span&gt;&lt;font&gt;CM&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;&lt;font&gt;HMI&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#121519;fontColor=#00FF00;strokeColor=#B3B3B3;glass=0;rounded=0;shadow=0;gradientColor=none;labelBackgroundColor=none;fontSize=10;fontStyle=0" parent="BcEj_neSAS26KWRLNINa-13" vertex="1">
           <mxGeometry x="20.00333333333333" y="36.666666666666686" width="46.666666666666664" height="46.666666666666664" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-17" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="505" y="575" width="130" height="130" as="geometry" />
+        <mxCell id="BcEj_neSAS26KWRLNINa-17" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="510" y="575" width="130" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-18" value="Counting Machine" style="whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=top;rounded=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;fontStyle=1;textShadow=0;labelBorderColor=none;" vertex="1" parent="BcEj_neSAS26KWRLNINa-17">
+        <mxCell id="BcEj_neSAS26KWRLNINa-18" value="Counting Machine" style="whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=top;rounded=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;fontStyle=1;textShadow=0;labelBorderColor=none;" parent="BcEj_neSAS26KWRLNINa-17" vertex="1">
           <mxGeometry width="130" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-19" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CM&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Hardware&lt;/font&gt;&lt;/div&gt;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" vertex="1" parent="BcEj_neSAS26KWRLNINa-17">
+        <mxCell id="BcEj_neSAS26KWRLNINa-19" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CM&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Hardware&lt;/font&gt;&lt;/div&gt;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" parent="BcEj_neSAS26KWRLNINa-17" vertex="1">
           <mxGeometry x="40.00333333333333" y="70" width="79.99999999999999" height="39.99999999999999" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-20" value="&lt;span&gt;&lt;font&gt;CM&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;&lt;font&gt;HMI&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#121519;fontColor=#00FF00;strokeColor=#B3B3B3;glass=0;rounded=0;shadow=0;gradientColor=none;labelBackgroundColor=none;fontSize=10;fontStyle=0" vertex="1" parent="BcEj_neSAS26KWRLNINa-17">
+        <mxCell id="BcEj_neSAS26KWRLNINa-20" value="&lt;span&gt;&lt;font&gt;CM&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;&lt;font&gt;HMI&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#121519;fontColor=#00FF00;strokeColor=#B3B3B3;glass=0;rounded=0;shadow=0;gradientColor=none;labelBackgroundColor=none;fontSize=10;fontStyle=0" parent="BcEj_neSAS26KWRLNINa-17" vertex="1">
           <mxGeometry x="20.00333333333333" y="36.666666666666686" width="46.666666666666664" height="46.666666666666664" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-24" value="&lt;font style=&quot;font-size: 27px;&quot;&gt;&lt;b&gt;...&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-24" value="&lt;font style=&quot;font-size: 27px;&quot;&gt;&lt;b&gt;...&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="250" y="625" width="65" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-27" value="SCM&lt;br&gt;Frontend&lt;div&gt;[React]&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-27" value="SCM&lt;br&gt;Frontend&lt;div&gt;[React]&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="590" y="275" width="140" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-28" value="Data&lt;div&gt;Lake&lt;/div&gt;&lt;div&gt;[AWS]&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontStyle=1;fillColor=#fad7ac;strokeColor=#b46504;" vertex="1" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-28" value="Data&lt;div&gt;Lake&lt;/div&gt;&lt;div&gt;[AWS]&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontStyle=1;fillColor=#fad7ac;strokeColor=#b46504;" parent="1" vertex="1">
           <mxGeometry x="907.5" y="267.5" width="75" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-31" value="On-Premise&lt;div&gt;Edge Device&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=bottom;fontStyle=1;fillColor=#E6E6E6;" vertex="1" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-31" value="On-Premise&lt;div&gt;Edge Device&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=bottom;fontStyle=1;fillColor=#E6E6E6;" parent="1" vertex="1">
           <mxGeometry x="830" y="535" width="230" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-32" value="&lt;font style=&quot;font-size: 27px;&quot;&gt;&lt;b&gt;...&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-32" value="&lt;font style=&quot;font-size: 27px;&quot;&gt;&lt;b&gt;...&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="445" y="625" width="65" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-26" target="BcEj_neSAS26KWRLNINa-75">
+        <mxCell id="BcEj_neSAS26KWRLNINa-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="BcEj_neSAS26KWRLNINa-26" target="BcEj_neSAS26KWRLNINa-75" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1250" y="648" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1120" y="650" />
-              <mxPoint x="1120" y="595" />
+              <mxPoint x="1120" y="645" />
+              <mxPoint x="1120" y="580" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-53" value="Fetch Order Data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BcEj_neSAS26KWRLNINa-47">
+        <mxCell id="BcEj_neSAS26KWRLNINa-53" value="Get Order Data&lt;div&gt;[Async]&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BcEj_neSAS26KWRLNINa-47" vertex="1" connectable="0">
           <mxGeometry x="0.005" y="2" relative="1" as="geometry">
-            <mxPoint x="8" y="-10" as="offset" />
+            <mxPoint x="8" y="-8" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-26" target="BcEj_neSAS26KWRLNINa-22">
+        <mxCell id="BcEj_neSAS26KWRLNINa-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="1" source="BcEj_neSAS26KWRLNINa-26" target="BcEj_neSAS26KWRLNINa-22" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="850" y="650" />
@@ -110,156 +110,167 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-50" value="Read Line Info" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BcEj_neSAS26KWRLNINa-49">
+        <mxCell id="BcEj_neSAS26KWRLNINa-50" value="Read Line Info" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BcEj_neSAS26KWRLNINa-49" vertex="1" connectable="0">
           <mxGeometry x="0.3709" y="-1" relative="1" as="geometry">
             <mxPoint x="8" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-26" target="BcEj_neSAS26KWRLNINa-52">
+        <mxCell id="BcEj_neSAS26KWRLNINa-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;dashed=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BcEj_neSAS26KWRLNINa-26" target="BcEj_neSAS26KWRLNINa-52" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="979" y="520" />
-              <mxPoint x="1123" y="520" />
-              <mxPoint x="1123" y="160" />
+              <mxPoint x="1120" y="520" />
+              <mxPoint x="1120" y="155" />
             </Array>
+            <mxPoint x="1180" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-56" value="Fetch settings to apply&lt;div&gt;for each CM based on&lt;/div&gt;&lt;div&gt;ML Model&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BcEj_neSAS26KWRLNINa-55">
+        <mxCell id="BcEj_neSAS26KWRLNINa-56" value="Fetch settings to apply&lt;div&gt;for each CM based on&lt;/div&gt;&lt;div&gt;ML Model&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BcEj_neSAS26KWRLNINa-55" vertex="1" connectable="0">
           <mxGeometry x="0.1615" y="2" relative="1" as="geometry">
             <mxPoint y="45" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-26" target="BcEj_neSAS26KWRLNINa-18">
+        <mxCell id="BcEj_neSAS26KWRLNINa-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="BcEj_neSAS26KWRLNINa-26" target="BcEj_neSAS26KWRLNINa-18" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="800" y="669" />
-              <mxPoint x="800" y="790" />
-              <mxPoint x="570" y="790" />
+              <mxPoint x="800" y="800" />
+              <mxPoint x="575" y="800" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-59" value="Write CM settings&lt;div&gt;based on ML Model&lt;/div&gt;&lt;div&gt;Data&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BcEj_neSAS26KWRLNINa-58">
+        <mxCell id="BcEj_neSAS26KWRLNINa-59" value="Write CM settings&lt;div&gt;based on ML Model&lt;/div&gt;&lt;div&gt;Data&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BcEj_neSAS26KWRLNINa-58" vertex="1" connectable="0">
           <mxGeometry x="0.3517" y="-2" relative="1" as="geometry">
             <mxPoint x="88" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-26" value="SCM&lt;br&gt;Backend&lt;div&gt;[C#/.NET]&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="877.5" y="612.5" width="135" height="75" as="geometry" />
+        <mxCell id="BcEj_neSAS26KWRLNINa-26" value="SCM&lt;br&gt;Backend&lt;div&gt;[C#/.NET]&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="877.5" y="570" width="135" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-26" target="BcEj_neSAS26KWRLNINa-18">
+        <mxCell id="BcEj_neSAS26KWRLNINa-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;dashed=1;" parent="1" source="BcEj_neSAS26KWRLNINa-26" target="BcEj_neSAS26KWRLNINa-18" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="878" y="630" />
+              <mxPoint x="877" y="630" />
               <mxPoint x="800" y="630" />
               <mxPoint x="800" y="500" />
-              <mxPoint x="570" y="500" />
+              <mxPoint x="575" y="500" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-33" value="Read CMs data&lt;div&gt;Read data which was&amp;nbsp;&lt;/div&gt;&lt;div&gt;changed&amp;nbsp;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;by the User&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BcEj_neSAS26KWRLNINa-29">
+        <mxCell id="BcEj_neSAS26KWRLNINa-33" value="Read CMs data&lt;div&gt;Read data which was&amp;nbsp;&lt;/div&gt;&lt;div&gt;changed&amp;nbsp;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;by the User&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BcEj_neSAS26KWRLNINa-29" vertex="1" connectable="0">
           <mxGeometry x="0.3306" relative="1" as="geometry">
             <mxPoint x="63" y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-26" target="BcEj_neSAS26KWRLNINa-28">
+        <mxCell id="BcEj_neSAS26KWRLNINa-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="BcEj_neSAS26KWRLNINa-26" target="BcEj_neSAS26KWRLNINa-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-36" value="Write Order Status Data&lt;div&gt;Writes CM Data&lt;/div&gt;&lt;div&gt;Writes User Interactions&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BcEj_neSAS26KWRLNINa-34">
+        <mxCell id="BcEj_neSAS26KWRLNINa-36" value="Write Order Status Data&lt;div&gt;Writes CM Data&lt;/div&gt;&lt;div&gt;Writes User Interactions&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BcEj_neSAS26KWRLNINa-34" vertex="1" connectable="0">
           <mxGeometry x="0.4222" y="1" relative="1" as="geometry">
             <mxPoint x="1" y="51" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-27" target="BcEj_neSAS26KWRLNINa-28">
+        <mxCell id="BcEj_neSAS26KWRLNINa-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" parent="1" source="BcEj_neSAS26KWRLNINa-27" target="BcEj_neSAS26KWRLNINa-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-39" value="Reads latest data&lt;div&gt;which is relevant for&lt;/div&gt;&lt;div&gt;Users&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BcEj_neSAS26KWRLNINa-35">
+        <mxCell id="BcEj_neSAS26KWRLNINa-39" value="Reads latest data&lt;div&gt;which is relevant for&lt;/div&gt;&lt;div&gt;Users&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BcEj_neSAS26KWRLNINa-35" vertex="1" connectable="0">
           <mxGeometry x="-0.1163" relative="1" as="geometry">
             <mxPoint x="3" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-52" value="&lt;div&gt;Trained&lt;/div&gt;ML Model" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Business_Success-2515/brain-think-brainstorm-creative-idea-1080.svg" vertex="1" parent="1">
-          <mxGeometry x="990" y="115" width="90" height="90" as="geometry" />
+        <mxCell id="BcEj_neSAS26KWRLNINa-52" value="&lt;div&gt;Trained&lt;/div&gt;ML Model" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Business_Success-2515/brain-think-brainstorm-creative-idea-1080.svg" parent="1" vertex="1">
+          <mxGeometry x="990" y="110" width="90" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-14">
+        <mxCell id="BcEj_neSAS26KWRLNINa-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="BcEj_neSAS26KWRLNINa-14" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="569.9999999999998" y="790" as="targetPoint" />
+            <mxPoint x="570" y="800" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="380" y="790" />
+              <mxPoint x="380" y="800" />
+              <mxPoint x="580" y="800" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-7">
+        <mxCell id="BcEj_neSAS26KWRLNINa-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="BcEj_neSAS26KWRLNINa-7" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="380" y="790" as="targetPoint" />
+            <mxPoint x="380" y="800" as="targetPoint" />
             <mxPoint x="187.51999999999998" y="705" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="185" y="790" />
+              <mxPoint x="185" y="800" />
+              <mxPoint x="380" y="800" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-21" value="n counting machines on a production line" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;labelBackgroundColor=light-dark(#e6e6e6, #ededed);" vertex="1" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-21" value="n counting machines on a production line" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;labelBackgroundColor=light-dark(#e6e6e6, #ededed);" parent="1" vertex="1">
           <mxGeometry x="202.5" y="725" width="370" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-14">
+        <mxCell id="BcEj_neSAS26KWRLNINa-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;dashed=1;" parent="1" source="BcEj_neSAS26KWRLNINa-14" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="570" y="500" as="targetPoint" />
+            <mxPoint x="580" y="500" as="targetPoint" />
             <mxPoint x="510" y="820" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="380" y="500" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-7">
+        <mxCell id="BcEj_neSAS26KWRLNINa-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;dashed=1;" parent="1" source="BcEj_neSAS26KWRLNINa-7" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="377.52" y="500" as="targetPoint" />
+            <mxPoint x="380" y="500" as="targetPoint" />
             <mxPoint x="187.51999999999998" y="575" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="185" y="500" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-66" target="BcEj_neSAS26KWRLNINa-52">
+        <mxCell id="BcEj_neSAS26KWRLNINa-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BcEj_neSAS26KWRLNINa-66" target="BcEj_neSAS26KWRLNINa-52" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-68" value="Train Model" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BcEj_neSAS26KWRLNINa-67">
+        <mxCell id="BcEj_neSAS26KWRLNINa-68" value="Train Model" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BcEj_neSAS26KWRLNINa-67" vertex="1" connectable="0">
           <mxGeometry x="-0.2906" y="-3" relative="1" as="geometry">
             <mxPoint x="9" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-66" value="ML Data Pipeline&lt;div&gt;[Python]&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ACC2FC;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-66" value="ML Data Pipeline&lt;div&gt;[Python]&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ACC2FC;strokeColor=#6c8ebf;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="660" y="120" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-66" target="BcEj_neSAS26KWRLNINa-28">
+        <mxCell id="BcEj_neSAS26KWRLNINa-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" parent="1" source="BcEj_neSAS26KWRLNINa-66" target="BcEj_neSAS26KWRLNINa-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-71" value="Fetch relevant data to train&lt;div&gt;Model on&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BcEj_neSAS26KWRLNINa-70">
+        <mxCell id="BcEj_neSAS26KWRLNINa-71" value="Fetch relevant data to train&lt;div&gt;Model on&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BcEj_neSAS26KWRLNINa-70" vertex="1" connectable="0">
           <mxGeometry x="-0.2025" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="12" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-73" value="&lt;b style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;font style=&quot;forced-color-adjust: none; font-size: 14px;&quot;&gt;Production Line&lt;/font&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;labelBackgroundColor=light-dark(#e6e6e6, #ededed);" vertex="1" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-73" value="&lt;b style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;font style=&quot;forced-color-adjust: none; font-size: 14px;&quot;&gt;Production Line&lt;/font&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;labelBackgroundColor=light-dark(#e6e6e6, #ededed);" parent="1" vertex="1">
           <mxGeometry x="318.75" y="535" width="122.5" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-75" value="External Order Data API" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="1215" y="565" width="120" height="60" as="geometry" />
+        <mxCell id="BcEj_neSAS26KWRLNINa-75" value="External Order Data API" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="1215" y="550" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-76" value="External Production Line API" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="BcEj_neSAS26KWRLNINa-76" value="External Production Line API" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="1215" y="687.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-26" target="BcEj_neSAS26KWRLNINa-76">
+        <mxCell id="BcEj_neSAS26KWRLNINa-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BcEj_neSAS26KWRLNINa-26" target="BcEj_neSAS26KWRLNINa-76" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1190" y="655" as="sourcePoint" />
             <mxPoint x="1392" y="600" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1120" y="650" />
+              <mxPoint x="1120" y="645" />
               <mxPoint x="1120" y="718" />
               <mxPoint x="1215" y="718" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="BcEj_neSAS26KWRLNINa-80" value="&lt;br&gt;&lt;div&gt;Fetch Production Line Info&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BcEj_neSAS26KWRLNINa-79">
+        <mxCell id="BcEj_neSAS26KWRLNINa-80" value="&lt;div&gt;Fetch Production Line Info&lt;/div&gt;&lt;div&gt;[Sync]&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BcEj_neSAS26KWRLNINa-79" vertex="1" connectable="0">
           <mxGeometry x="0.005" y="2" relative="1" as="geometry">
-            <mxPoint x="16" y="9" as="offset" />
+            <mxPoint x="16" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mBiyRRaw-XdHYr8DM-Fv-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.134;entryY=-0.001;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BcEj_neSAS26KWRLNINa-1" target="BcEj_neSAS26KWRLNINa-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mBiyRRaw-XdHYr8DM-Fv-3" value="Interact with Line&lt;div&gt;by starting a new&lt;/div&gt;&lt;div&gt;order&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mBiyRRaw-XdHYr8DM-Fv-2">
+          <mxGeometry x="-0.2579" y="1" relative="1" as="geometry">
+            <mxPoint y="2" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>

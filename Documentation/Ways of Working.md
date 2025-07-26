@@ -1,5 +1,7 @@
 # Ways of Working: Smart Chaos Machines Team
 
+_This document defines team collaboration practices for the Smart Chaos Machines project. For project context and technical architecture, see [Project Proposal](Project-Proposal.md). For implementation timeline, see [Implementation Plan](Implementation-Plan.md)._
+
 ## **"Energize People Everyday":**
 - **Dad Joke Standups**: Dad jokes before the standup starts to start meetings with a bit of fun
 - **Gaming Sessions**: Regular online gaming with mic-required games (like Lethal Company) to build natural communication and teamwork (outside the pressure of production deadlines, with approval by manager)
@@ -10,6 +12,8 @@
 
 Our approach to team collaboration is built on two core principles: **continuous pairing** and **architecture-driven planning**. These practices address the unique challenges of our distributed team working on complex industrial IoT systems while building the psychological safety and technical excellence needed for success.
 
+_These practices directly support the implementation phases outlined in [Implementation Plan](Implementation-Plan.md) and the technical complexity described in [Project Proposal](Project-Proposal.md)._
+
 ## Pair Programming as Default Practice
 
 ### Why Pair Programming
@@ -18,6 +22,8 @@ Our approach to team collaboration is built on two core principles: **continuous
 - **Knowledge Distribution**: Critical when dealing with OPC-UA integration, firmware complexities, and external specialists - prevents single points of failure
 - **Team Cohesion**: Merged teams with different technical backgrounds benefit from forced collaboration and shared problem-solving
 - **Continuous Learning**: Natural knowledge transfer between team members with different expertise areas
+
+**Alignment with Project Needs:** _Supporting the modular monolithic architecture and multi-phase implementation described in [Project Proposal](Project-Proposal.md#modular-monolithic-architecture)_
 
 ### Implementation
 
@@ -40,6 +46,8 @@ Our approach to team collaboration is built on two core principles: **continuous
 
 ### Architecture-Driven Sprint Planning
 
+_Supporting the phased implementation approach detailed in [Implementation Plan](Implementation-Plan.md#work-methodology-agile-with-phased-focus)_
+
 **Process:**
 1. **Current State Review**: Start each sprint with updated architecture diagram snapshot showing what's built, being built, or needs building - keeping planning visual and immediately actionable
 2. **Target State Vision**: Visualize what the architecture should look like after the sprint
@@ -59,6 +67,8 @@ Our approach to team collaboration is built on two core principles: **continuous
 - **Component Ownership**: Color-code architecture components by team member expertise
 - **Integration Highlights**: Clearly mark OPC-UA, RabbitMQ, and external API endpoints
 - **Deployment Boundaries**: Visual separation of edge, on-premises, and cloud components
+
+_Directly supporting the hybrid edge-cloud architecture described in [Project Proposal](Project-Proposal.md#hosting-decisions-hybrid-edge-cloud-architecture)_
 
 **Living Documentation:**
 - **Architecture as Code**: Diagrams version-controlled and updated each sprint
@@ -80,6 +90,8 @@ Our approach to team collaboration is built on two core principles: **continuous
 - **Onboarding Through Pairing**: New team members paired with different experts daily
 - **External Integration Expertise**: Shared understanding of external APIs
 
+_Critical for managing the risks identified in [Project Proposal](Project-Proposal.md#organizational-risks)_
+
 ## Team Health and Morale
 
 ### Building Psychological Safety
@@ -99,8 +111,10 @@ Our approach to team collaboration is built on two core principles: **continuous
 **Support Structure:**
 - **Firefighter Rotation**: One developer per sprint handles legacy applications
 - **Pair Support**: Firefighter never works alone - always has backup
-- **Technical Debt Time**: 10% sprint capacity for unforseen issues
+- **Technical Debt Time**: 10% sprint capacity for unforeseen issues
 - **Learning Budget**: Time allocated for exploring relevant new technologies
+
+_Mitigating legacy application neglect risk identified in [Project Proposal](Project-Proposal.md#organizational-risks)_
 
 ## Success Indicators
 
@@ -122,6 +136,8 @@ Our approach to team collaboration is built on two core principles: **continuous
 - **Integration Success**: Smooth deployments and fewer rollbacks
 - **Continuous Improvement**: Regular architecture refactoring and technical debt reduction
 
+_Supporting the technical excellence metrics defined in [Project Proposal](Project-Proposal.md#technical-excellence)_
+
 ## Implementation Timeline
 
 ### Week 1-2: Foundation
@@ -138,3 +154,34 @@ Our approach to team collaboration is built on two core principles: **continuous
 - Regular retrospectives on ways of working effectiveness
 - Adjust practices based on project needs and team feedback
 - Maintain focus on team health alongside technical delivery
+
+_Timeline aligns with Phase 1 foundation work described in [Implementation Plan](Implementation-Plan.md#phase-1-foundation-2-sprints)_
+
+## Integration with Project Phases
+
+**Phase 1-2 (Foundation & Core Value):**
+
+- Heavy pairing on OPC-UA integration
+- Architecture snapshots crucial for understanding modular monolith evolution
+
+**Phase 3 (Stabilization):**
+
+- Mob programming for UAT preparation
+- Cross-functional pairing with operators for training
+
+**Phase 4 (Global Rollout):**
+
+- Knowledge distribution critical for supporting multiple factories
+- Visual planning essential for tracking deployment progress
+
+**Phase 5 (ML Integration):**
+
+- External specialist pairing becomes critical
+- Architecture evolution tracking for ML pipeline integration
+
+---
+
+_Related Documents:_
+
+- _[Project Proposal](Project-Proposal.md) - Technical context and architecture these practices support_
+- _[Implementation Plan](Implementation-Plan.md) - Sprint timeline and phases these practices enable_

@@ -33,10 +33,9 @@ The platform transforms counting machine operations from reactive, manual proces
 
 ---
 
-# **How We Work:** 
+# **How We Work** 
 
 > The team operates in 2-week agile sprints. For details on our collaboration, pairing, and planning practices, see [Team Ways of Working](#team-ways-of-working).
-
 
 
 # **Project Structure**
