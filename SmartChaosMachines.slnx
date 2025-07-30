@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="SmartChaosMachines.LineControl.Tests/SmartChaosMachines.LineControl.Tests.csproj" />
   <Project Path="SmartChaosMachines.LineControl/SmartChaosMachines.LineControl.csproj" />
   <Project Path="SmartChaosMachines.AppHost/SmartChaosMachines.AppHost.csproj" />
   <Project Path="SmartChaosMachines.ServiceDefaults/SmartChaosMachines.ServiceDefaults.csproj" />
