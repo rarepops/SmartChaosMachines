@@ -2,7 +2,7 @@
 using LineControl.Domain.Enums;
 using System.Collections.Concurrent;
 
-namespace LineControl.Application.Services;
+namespace LineControl.Infrastructure.Services;
 
 public class OpcUaTagSimulator : IDisposable
 {

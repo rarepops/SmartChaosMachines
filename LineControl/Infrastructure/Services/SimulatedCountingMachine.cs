@@ -2,7 +2,7 @@
 using LineControl.Domain.Enums;
 using LineControl.Domain.Interfaces;
 
-namespace LineControl.Application.Services;
+namespace LineControl.Infrastructure.Services;
 
 public class SimulatedCountingMachine : ICountingMachine, IDisposable
 {
@@ -25,12 +25,37 @@ public class SimulatedCountingMachine : ICountingMachine, IDisposable
         _logger = logger;
         _tagSimulator = new OpcUaTagSimulator(loggerFactory.CreateLogger<OpcUaTagSimulator>());
 
-
         // Timer to simulate continuous data updates (every 3 seconds)
         _dataUpdateTimer = new Timer(SimulateDataChanges, null,
             Timeout.InfiniteTimeSpan, Timeout.InfiniteTimeSpan);
     }
 
+    // Implement ICountingMachine interface methods
+    public async Task<Dictionary<string, TagValue>> ReadTagsAsync()
+    {
+        if (State != CountingMachineState.Connected)
+        {
+            // Auto-connect if not connected
+            await ConnectAsync();
+        }
+
+        return _tagSimulator.GetAllTags();
+    }
+
+    public async Task WriteTagsAsync(Dictionary<string, TagValue> tags)
+    {
+        if (State != CountingMachineState.Connected)
+        {
+            await ConnectAsync();
+        }
+
+        foreach (var tag in tags)
+        {
+            await _tagSimulator.WriteTagAsync(tag.Key, tag.Value.Value);
+        }
+    }
+
+    // Keep existing methods for backward compatibility
     public async Task<bool> ConnectAsync(CancellationToken cancellationToken = default)
     {
         if (State != CountingMachineState.Disconnected)
@@ -103,9 +128,6 @@ public class SimulatedCountingMachine : ICountingMachine, IDisposable
                 allTags
             );
 
-            _logger.LogDebug("Read data from {Position}: Count={Count}, Status={Status}, Speed={Speed}",
-                data.Position, data.CurrentCount, data.Status, data.CountingSpeed);
-
             return data;
         }
         catch (Exception ex)
@@ -113,68 +135,6 @@ public class SimulatedCountingMachine : ICountingMachine, IDisposable
             _logger.LogError(ex, "Error reading data from counting machine {Position}", Endpoint.Position);
             throw;
         }
-    }
-
-    public async Task WriteConfigurationAsync(CountingMachineConfig config)
-    {
-        if (State != CountingMachineState.Connected)
-            throw new InvalidOperationException($"Cannot write configuration - machine {Endpoint.Position} is not connected");
-
-        if (config.Position != Endpoint.Position)
-            throw new ArgumentException($"Configuration position {config.Position} does not match machine position {Endpoint.Position}");
-
-        try
-        {
-            _logger.LogInformation("Applying configuration to {Position}: Recipe={RecipeId}, ElementsPerBag={ElementsPerBag}, Speed={CountingSpeed}",
-                config.Position, config.RecipeId, config.ElementsPerBag, config.CountingSpeed);
-
-            // Write all configuration tags to the simulator
-            foreach (var configTag in config.ConfigurationTags)
-            {
-                await _tagSimulator.WriteTagAsync(configTag.Key, configTag.Value.Value);
-            }
-
-            // Set machine to running state when configuration is applied
-            await _tagSimulator.WriteTagAsync("Status", "Configured");
-            await _tagSimulator.WriteTagAsync("IsUsedInOrder", true);
-
-            // Simulate brief delay for configuration to take effect
-            await Task.Delay(500);
-
-            await _tagSimulator.WriteTagAsync("Status", "Running");
-
-            _logger.LogInformation("Configuration applied successfully to {Position}", config.Position);
-
-            // Fire data changed event after configuration
-            var updatedData = await ReadDataAsync();
-            DataChanged?.Invoke(this, new CountingMachineDataChangedEventArgs(updatedData));
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error writing configuration to counting machine {Position}", Endpoint.Position);
-            await _tagSimulator.WriteTagAsync("Status", "Error");
-            State = CountingMachineState.Error;
-            throw;
-        }
-    }
-
-    public async Task<T> ReadTagAsync<T>(string tagName)
-    {
-        if (State != CountingMachineState.Connected)
-            throw new InvalidOperationException($"Cannot read tag - machine {Endpoint.Position} is not connected");
-
-        return await _tagSimulator.ReadTagAsync<T>(tagName);
-    }
-
-    public async Task WriteTagAsync<T>(string tagName, T value)
-    {
-        if (State != CountingMachineState.Connected)
-            throw new InvalidOperationException($"Cannot write tag - machine {Endpoint.Position} is not connected");
-
-        await _tagSimulator.WriteTagAsync(tagName, value);
-
-        _logger.LogDebug("Manual tag write to {Position}: {TagName} = {Value}",
-            Endpoint.Position, tagName, value);
     }
 
     private async void SimulateDataChanges(object? state)

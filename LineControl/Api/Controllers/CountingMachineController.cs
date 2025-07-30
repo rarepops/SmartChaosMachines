@@ -1,147 +1,89 @@
-﻿using LineControl.Application.Services;
-using LineControl.Domain.Entities;
-using LineControl.Domain.Enums;
+﻿using LineControl.Api.Contracts;
+using LineControl.Api.Contracts.Responses;
+using LineControl.Application.UseCases.ConfigureMachine;
+using LineControl.Application.UseCases.GetAllMachines;
+using LineControl.Application.UseCases.GetMachineData;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LineControl.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class CountingMachinesController(
-    LineControlService lineControlService,
-    ILogger<CountingMachinesController> logger) : ControllerBase
+[Produces("application/json")]
+public class CountingMachinesController : ControllerBase
 {
-    private readonly LineControlService _lineControlService = lineControlService;
-    private readonly ILogger<CountingMachinesController> _logger = logger;
+    private readonly GetMachineDataUseCase _getMachineData;
+    private readonly ConfigureMachineUseCase _configureMachine;
+    private readonly GetAllMachinesUseCase _getAllMachines;
+    private readonly ILogger<CountingMachinesController> _logger;
+
+    public CountingMachinesController(
+        GetMachineDataUseCase getMachineData,
+        ConfigureMachineUseCase configureMachine,
+        GetAllMachinesUseCase getAllMachines,
+        ILogger<CountingMachinesController> logger)
+    {
+        _getMachineData = getMachineData;
+        _configureMachine = configureMachine;
+        _getAllMachines = getAllMachines;
+        _logger = logger;
+    }
 
     /// <summary>
-    /// Get current data from a specific counting machine
+    /// Gets detailed data for a specific counting machine by position.
     /// </summary>
-    /// <param name="position">Machine position (e.g., CM001, CM002)</param>
-    /// <returns>Current machine data including count, status, and performance metrics</returns>
+    /// <param name="position">The machine position identifier (e.g., CM01_1, CM01_2, CM02_1, CM02_2)</param>
+    /// <returns>Detailed machine data including status, counts, and configuration</returns>
     [HttpGet("{position}")]
-    public async Task<ActionResult<CountingMachineData>> GetMachineData(string position)
+    [Produces("application/json")]
+    [ProducesResponseType(typeof(GetMachineDataResponse), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public async Task<ActionResult<GetMachineDataResponse>> GetMachineData(string position)
     {
-        try
+        var result = await _getMachineData.ExecuteAsync(position);
+        if (result == null)
         {
-            var data = await _lineControlService.GetMachineDataAsync(position);
-            if (data == null)
-            {
-                _logger.LogWarning("Machine {Position} not found or not connected", position);
-                return NotFound($"Machine {position} not found");
-            }
-
-            _logger.LogDebug("Retrieved data for machine {Position}: Count={Count}, Status={Status}",
-                position, data.CurrentCount, data.Status);
-
-            return Ok(data);
+            return NotFound($"Machine at position {position} not found or not accessible");
         }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error getting data for machine {Position}", position);
-            return StatusCode(500, "Internal server error");
-        }
+        return Ok(result);
     }
 
     /// <summary>
-    /// Apply configuration to a counting machine (simulates order changeover)
+    /// Gets a summary of all counting machines in the factory.
     /// </summary>
-    /// <param name="position">Machine position to configure</param>
-    /// <param name="request">Configuration parameters for the new recipe</param>
-    /// <returns>Success/failure status of configuration application</returns>
+    /// <returns>List of machine status summaries for all positions</returns>
+    [HttpGet("")]
+    [Produces("application/json")]
+    [ProducesResponseType(typeof(IEnumerable<MachineStatusSummary>), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public async Task<ActionResult<IEnumerable<MachineStatusSummary>>> GetAllMachines()
+    {
+        var machines = await _getAllMachines.ExecuteAsync();
+        return Ok(machines);
+    }
+
+    /// <summary>
+    /// Configures a specific counting machine with new settings.
+    /// </summary>
+    /// <param name="position">The machine position identifier (e.g., CM01_1, CM01_2, CM02_1, CM02_2)</param>
+    /// <param name="request">Configuration parameters including recipe, speeds, and vibration settings</param>
+    /// <returns>Success or failure indication</returns>
     [HttpPost("{position}/configure")]
-    public async Task<ActionResult> ConfigureMachine(string position, [FromBody] ConfigurationRequest request)
+    [Consumes("application/json")]
+    [Produces("application/json")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public async Task<IActionResult> ConfigureMachine(string position, [FromBody] ConfigurationRequest request)
     {
-        try
+        var success = await _configureMachine.ExecuteAsync(position, request);
+        if (!success)
         {
-            if (!request.IsValid)
-            {
-                _logger.LogWarning("Invalid configuration request for machine {Position}: {Request}", position, request);
-                return BadRequest("Invalid configuration parameters");
-            }
-
-            _logger.LogInformation("Applying configuration to machine {Position}: Recipe={RecipeId}, ElementsPerBag={ElementsPerBag}",
-                position, request.RecipeId, request.ElementsPerBag);
-
-            var config = new CountingMachineConfig(
-                position,
-                new Dictionary<string, TagValue>
-                {
-                    ["RecipeId"] = new TagValue(request.RecipeId, TagType.String),
-                    ["ElementsPerBag"] = new TagValue(request.ElementsPerBag, TagType.Int),
-                    ["CountingSpeed"] = new TagValue(request.CountingSpeed, TagType.Int),
-                    ["BeltSpeed"] = new TagValue(request.FeederSpeed, TagType.Int),
-                    ["VibrationStrength"] = new TagValue(request.VibrationStrength, TagType.Int)
-                }
-            );
-
-            var success = await _lineControlService.ApplyConfigurationAsync(position, config);
-
-            if (success)
-            {
-                _logger.LogInformation("Configuration applied successfully to machine {Position}", position);
-                return Ok(new
-                {
-                    Message = $"Configuration applied to machine {position}",
-                    request.RecipeId,
-                    Timestamp = DateTime.UtcNow
-                });
-            }
-
-            _logger.LogWarning("Failed to apply configuration to machine {Position}", position);
-            return BadRequest($"Failed to apply configuration to machine {position}");
+            return BadRequest("Configuration failed - invalid parameters or machine not accessible");
         }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error configuring machine {Position}", position);
-            return StatusCode(500, "Internal server error");
-        }
-    }
-
-    /// <summary>
-    /// Get status overview of all counting machines on the line
-    /// </summary>
-    /// <returns>List of machine status summaries</returns>
-    [HttpGet]
-    public async Task<ActionResult<List<MachineStatusSummary>>> GetAllMachines()
-    {
-        try
-        {
-            var machines = await _lineControlService.GetAllMachinesStatusAsync();
-            return Ok(machines);
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error getting all machine statuses");
-            return StatusCode(500, "Internal server error");
-        }
+        return Ok();
     }
 }
-
-// DTOs for API
-public record ConfigurationRequest(
-    string RecipeId,
-    int ElementsPerBag,
-    int CountingSpeed,
-    int FeederSpeed,
-    int VibrationStrength
-)
-{
-    /// <summary>
-    /// Validates that all configuration parameters are within acceptable ranges
-    /// </summary>
-    public bool IsValid =>
-        !string.IsNullOrWhiteSpace(RecipeId) &&
-        ElementsPerBag > 0 &&
-        CountingSpeed is >= 0 and <= 100 &&
-        FeederSpeed is >= 0 and <= 100 &&
-        VibrationStrength is >= 0 and <= 10;
-}
-
-public record MachineStatusSummary(
-    string Position,
-    string Status,
-    int CurrentCount,
-    string RecipeId,
-    bool HasError
-);
