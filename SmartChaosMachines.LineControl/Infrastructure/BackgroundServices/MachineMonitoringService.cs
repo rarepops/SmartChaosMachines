@@ -2,18 +2,12 @@
 
 namespace LineControl.Infrastructure.BackgroundServices;
 
-public class MachineMonitoringService : BackgroundService
+public class MachineMonitoringService(
+    IServiceScopeFactory serviceScopeFactory,
+    ILogger<MachineMonitoringService> logger) : BackgroundService
 {
-    private readonly IServiceScopeFactory _serviceScopeFactory;
-    private readonly ILogger<MachineMonitoringService> _logger;
-
-    public MachineMonitoringService(
-        IServiceScopeFactory serviceScopeFactory,
-        ILogger<MachineMonitoringService> logger)
-    {
-        _serviceScopeFactory = serviceScopeFactory;
-        _logger = logger;
-    }
+    private readonly IServiceScopeFactory _serviceScopeFactory = serviceScopeFactory;
+    private readonly ILogger<MachineMonitoringService> _logger = logger;
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -21,10 +15,8 @@ public class MachineMonitoringService : BackgroundService
         {
             try
             {
-                // Create a new scope for each monitoring cycle
                 using var scope = _serviceScopeFactory.CreateScope();
 
-                // Get scoped services from the scope
                 var healthMonitor = scope.ServiceProvider.GetRequiredService<IMachineHealthMonitor>();
 
                 var healthStatus = await healthMonitor.GetAllHealthStatusAsync();

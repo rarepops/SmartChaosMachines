@@ -2,18 +2,12 @@
 
 namespace LineControl.Infrastructure.Services;
 
-public class MachineHealthMonitor : IMachineHealthMonitor
+public class MachineHealthMonitor(
+    IServiceScopeFactory serviceScopeFactory,
+    ILogger<MachineHealthMonitor> logger) : IMachineHealthMonitor
 {
-    private readonly IServiceScopeFactory _serviceScopeFactory;
-    private readonly ILogger<MachineHealthMonitor> _logger;
-
-    public MachineHealthMonitor(
-        IServiceScopeFactory serviceScopeFactory,
-        ILogger<MachineHealthMonitor> logger)
-    {
-        _serviceScopeFactory = serviceScopeFactory;
-        _logger = logger;
-    }
+    private readonly IServiceScopeFactory _serviceScopeFactory = serviceScopeFactory;
+    private readonly ILogger<MachineHealthMonitor> _logger = logger;
 
     public async Task<bool> IsHealthyAsync(string position)
     {

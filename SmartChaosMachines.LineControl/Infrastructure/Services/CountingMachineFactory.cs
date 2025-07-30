@@ -3,16 +3,10 @@ using LineControl.Domain.Interfaces;
 
 namespace LineControl.Infrastructure.Services;
 
-public class CountingMachineFactory : ICountingMachineFactory
+public class CountingMachineFactory(IServiceProvider serviceProvider, IMachinePositionConfiguration positionConfig) : ICountingMachineFactory
 {
-    private readonly IServiceProvider _serviceProvider;
-    private readonly IMachinePositionConfiguration _positionConfig;
-
-    public CountingMachineFactory(IServiceProvider serviceProvider, IMachinePositionConfiguration positionConfig)
-    {
-        _serviceProvider = serviceProvider;
-        _positionConfig = positionConfig;
-    }
+    private readonly IServiceProvider _serviceProvider = serviceProvider;
+    private readonly IMachinePositionConfiguration _positionConfig = positionConfig;
 
     public ICountingMachine CreateMachine(string position)
     {

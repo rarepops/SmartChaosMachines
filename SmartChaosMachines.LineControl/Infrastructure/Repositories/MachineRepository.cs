@@ -5,21 +5,14 @@ using LineControl.Domain.Interfaces;
 
 namespace LineControl.Infrastructure.Repositories;
 
-public class MachineRepository : IMachineRepository
+public class MachineRepository(
+    IMachineManager machineManager,
+    IMachinePositionConfiguration positionConfig,
+    ILogger<MachineRepository> logger) : IMachineRepository
 {
-    private readonly IMachineManager _machineManager;
-    private readonly IMachinePositionConfiguration _positionConfig;
-    private readonly ILogger<MachineRepository> _logger;
-
-    public MachineRepository(
-        IMachineManager machineManager,
-        IMachinePositionConfiguration positionConfig,
-        ILogger<MachineRepository> logger)
-    {
-        _machineManager = machineManager;
-        _positionConfig = positionConfig;
-        _logger = logger;
-    }
+    private readonly IMachineManager _machineManager = machineManager;
+    private readonly IMachinePositionConfiguration _positionConfig = positionConfig;
+    private readonly ILogger<MachineRepository> _logger = logger;
 
     public async Task<CountingMachineData?> GetMachineDataAsync(string position)
     {

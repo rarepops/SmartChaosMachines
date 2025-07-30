@@ -3,17 +3,11 @@ using System.Collections.Concurrent;
 
 namespace LineControl.Infrastructure.Services;
 
-public class MachineManager : IMachineManager, IDisposable
+public class MachineManager(IServiceScopeFactory serviceScopeFactory, ILogger<MachineManager> logger) : IMachineManager, IDisposable
 {
-    private readonly IServiceScopeFactory _serviceScopeFactory;
-    private readonly ILogger<MachineManager> _logger;
+    private readonly IServiceScopeFactory _serviceScopeFactory = serviceScopeFactory;
+    private readonly ILogger<MachineManager> _logger = logger;
     private readonly ConcurrentDictionary<string, ICountingMachine> _machines = new();
-
-    public MachineManager(IServiceScopeFactory serviceScopeFactory, ILogger<MachineManager> logger)
-    {
-        _serviceScopeFactory = serviceScopeFactory;
-        _logger = logger;
-    }
 
     public async Task<ICountingMachine> GetOrCreateMachineAsync(string position)
     {
