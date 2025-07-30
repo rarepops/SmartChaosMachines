@@ -1,14 +1,10 @@
-var builder = DistributedApplication.CreateBuilder(args);
+﻿var builder = DistributedApplication.CreateBuilder(args);
 
-var apiService = builder.AddProject<Projects.SmartChaosMachines_ApiService>("apiservice")
-    .WithHttpHealthCheck("/health");
+var lineControl = builder.AddProject<Projects.SmartChaosMachines_LineControl>("linecontrol")
+    .WithHttpEndpoint(port: 5000, name: "http-api")
+    .WithHttpsEndpoint(port: 5001, name: "https-api");
 
-builder.AddProject<Projects.SmartChaosMachines_Web>("webfrontend")
-    .WithExternalHttpEndpoints()
-    .WithHttpHealthCheck("/health")
-    .WithReference(apiService)
-    .WaitFor(apiService);
-
-builder.AddProject<Projects.LineControl>("linecontrol");
+lineControl
+    .WithEnvironment("ASPNETCORE_ENVIRONMENT", "Development");
 
 builder.Build().Run();

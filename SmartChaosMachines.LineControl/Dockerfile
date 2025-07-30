@@ -12,19 +12,19 @@ WORKDIR /app
 FROM mcr.microsoft.com/dotnet/sdk:10.0-preview-nanoserver-1809 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["LineControl/LineControl.csproj", "LineControl/"]
-RUN dotnet restore "./LineControl/LineControl.csproj"
+COPY ["SmartChaosMachines.LineControl/SmartChaosMachines.LineControl.csproj", "SmartChaosMachines.LineControl/"]
+RUN dotnet restore "./SmartChaosMachines.LineControl/SmartChaosMachines.LineControl.csproj"
 COPY . .
-WORKDIR "/src/LineControl"
-RUN dotnet build "./LineControl.csproj" -c %BUILD_CONFIGURATION% -o /app/build
+WORKDIR "/src/SmartChaosMachines.LineControl"
+RUN dotnet build "./SmartChaosMachines.LineControl.csproj" -c %BUILD_CONFIGURATION% -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./LineControl.csproj" -c %BUILD_CONFIGURATION% -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./SmartChaosMachines.LineControl.csproj" -c %BUILD_CONFIGURATION% -o /app/publish /p:UseAppHost=false
 
 # This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "LineControl.dll"]
+ENTRYPOINT ["dotnet", "SmartChaosMachines.LineControl.dll"]
