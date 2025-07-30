@@ -1,6 +1,7 @@
 ﻿using LineControl.Domain.Entities;
 using LineControl.Domain.Enums;
 using System.Collections.Concurrent;
+using System.Text;
 
 namespace LineControl.Infrastructure.Services;
 
@@ -65,7 +66,7 @@ public class OpcUaTagSimulator : IDisposable
             new TagValue(value, tagType),
             (key, existingValue) => new TagValue(value, tagType));
 
-        _logger.LogDebug("Written tag {TagName} = {Value} ({Type})", tagName, value, tagType);
+        _logger.LogInformation("External write: {TagName} = {Value} ({Type})", tagName, value, tagType);
         return Task.CompletedTask;
     }
 
@@ -76,15 +77,27 @@ public class OpcUaTagSimulator : IDisposable
 
     private void InitializeDefaultTags()
     {
-        _tags["RecipeId"] = new TagValue("", TagType.String);
+        string recipeId = GenerateRandomRecipeId();
+        int elementsPerBag = Random.Shared.Next(1, 5); // 1 to 4 inclusive
+
+        _tags["RecipeId"] = new TagValue(recipeId, TagType.String);
         _tags["CurrentCount"] = new TagValue(0, TagType.Int);
-        _tags["Status"] = new TagValue("Idle", TagType.String);
-        _tags["ElementsPerBag"] = new TagValue(24, TagType.Int);
-        _tags["CountingSpeed"] = new TagValue(0, TagType.Int);
+        _tags["Status"] = new TagValue("Running", TagType.String);
+        _tags["ElementsPerBag"] = new TagValue(elementsPerBag, TagType.Int);
+        _tags["CountingSpeed"] = new TagValue(10, TagType.Int);
         _tags["BeltSpeed"] = new TagValue(50, TagType.Int);
         _tags["VibrationStrength"] = new TagValue(2, TagType.Int);
-        _tags["IsUsedInOrder"] = new TagValue(false, TagType.Bool);
+        _tags["IsUsedInOrder"] = new TagValue(true, TagType.Bool);
         _tags["HasError"] = new TagValue(false, TagType.Bool);
+    }
+
+    private static string GenerateRandomRecipeId()
+    {
+        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        var sb = new StringBuilder(8);
+        for (int i = 0; i < 8; i++)
+            sb.Append(chars[Random.Shared.Next(chars.Length)]);
+        return sb.ToString();
     }
 
     private void SimulateTagUpdates(object? state)
@@ -100,16 +113,17 @@ public class OpcUaTagSimulator : IDisposable
             // Only simulate updates when machine is running
             if (status == "Running" && isUsedInOrder)
             {
-                // Increment count realistically
-                var increment = Random.Shared.Next(1, 4);
-                var newCount = currentCount + increment;
+                // Increment count by 1 every cycle
+                var newCount = currentCount + 1;
                 _tags["CurrentCount"] = new TagValue(newCount, TagType.Int);
+                _logger.LogInformation("Simulated tag change: CurrentCount = {Value} (Int)", newCount);
 
                 // Simulate speed variation
                 var currentSpeed = (int)_tags["CountingSpeed"].Value;
                 var speedVariation = Random.Shared.Next(-2, 3);
                 var newSpeed = Math.Max(0, Math.Min(100, currentSpeed + speedVariation));
                 _tags["CountingSpeed"] = new TagValue(newSpeed, TagType.Int);
+                _logger.LogInformation("Simulated tag change: CountingSpeed = {Value} (Int)", newSpeed);
 
                 // Simulate completing batches
                 var elementsPerBag = (int)_tags["ElementsPerBag"].Value;
@@ -117,6 +131,8 @@ public class OpcUaTagSimulator : IDisposable
                 {
                     _tags["Status"] = new TagValue("Completed", TagType.String);
                     _tags["CountingSpeed"] = new TagValue(0, TagType.Int);
+                    _logger.LogInformation("Simulated tag change: Status = Completed (String)");
+                    _logger.LogInformation("Simulated tag change: CountingSpeed = 0 (Int)");
                 }
             }
 
@@ -125,12 +141,23 @@ public class OpcUaTagSimulator : IDisposable
             {
                 _tags["HasError"] = new TagValue(true, TagType.Bool);
                 _tags["Status"] = new TagValue("Error", TagType.String);
+                _logger.LogInformation("Simulated tag change: HasError = true (Bool)");
+                _logger.LogInformation("Simulated tag change: Status = Error (String)");
             }
             else if ((string)_tags["Status"].Value == "Error" && Random.Shared.NextDouble() < 0.1)
             {
                 // 10% chance to recover from error
                 _tags["HasError"] = new TagValue(false, TagType.Bool);
                 _tags["Status"] = new TagValue("Running", TagType.String);
+                _logger.LogInformation("Simulated tag change: HasError = false (Bool)");
+                _logger.LogInformation("Simulated tag change: Status = Running (String)");
+            }
+
+            // 10% chance to randomly go idle
+            if (Random.Shared.NextDouble() < 0.10)
+            {
+                _tags["Status"] = new TagValue("Idle", TagType.String);
+                _logger.LogInformation("Simulated tag change: Status = Idle (String) -- 10%% random chance");
             }
         }
         catch (Exception ex)
