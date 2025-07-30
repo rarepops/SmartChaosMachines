@@ -63,4 +63,4 @@ The platform is designed for **containerized deployment** with:
 
 ## Future Evolution
 
-This distributed monolith slice provides a **scalable foundation** for industrial machine control while maintaining clean separation of concerns. The architecture is designed to evolve toward the full microservices-based SCM platform outlined in the project documentation[3], supporting global factory rollout and ML integration capabilities.
+This distributed monolith slice provides a **scalable foundation** for industrial machine control while maintaining clean separation of concerns. The architecture is designed to evolve toward the full microservices-based SCM platform outlined in the project documentation, supporting global factory rollout and ML integration capabilities.
